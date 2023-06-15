@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css@1.12/mvp.css"> 
+    <script
+      src="https://unpkg.com/jquery@3.6.1/dist/jquery.min.js"
+      defer
+    ></script>
+    <script src="script.js" defer></script>
+    <title>My cocktails</title>
+  </head>
+  <body>
+    <div class="content">
+      <div class="header">
+        <h1>My cocktails</h1>
+        <form>
+          <input
+            type="text"
+            name="cocktail"
+            id="cocktailInput"
+            placeholder="Search for a cocktail"
+          />
+          <input class="btn" type="submit" id="searchBtn" value="Submit" />
+        </form>
+        <form>
+          <select name="ingredient" id="select"></select>
+          <input class="btn" type="submit" id="ingredientBtn" value="Submit" />
+        </form>
+      </div>
+      <div id="cocktailList"></div>
+    </div>
+  </body>
+</html>

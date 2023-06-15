@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/mvp.css@1.12/mvp.css">  -->
+    <script
+      src="https://unpkg.com/jquery@3.6.1/dist/jquery.min.js"
+      defer
+    ></script>
+    <script src="script.js" defer></script>
+    <title>Meals</title>
+  </head>
+  <body>
+    <div class="content">
+      <h1>My meals</h1>
+      <div class="container">
+        <div class="form">
+          <form>
+            <div class="search">
+              <p class="prout">Search 🔍</p>
+
+              <div class="align">
+                <input
+                  type="text"
+                  name="meal"
+                  id="mealInput"
+                  placeholder="Search for a meal"
+                />
+                <a href="#mealList">
+                  <button
+                    class="button"
+                    type="submit"
+                    id="searchBtn"
+                    style="vertical-align: middle"
+                  >
+                    <span>Submit</span>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </form>
+          <form>
+            <div class="ingrd">
+              <h4>Find a recipe containing :</h4>
+              <div class="align">
+                <select name="ingredient" id="select"></select>
+                <button
+                  class="button"
+                  type="submit"
+                  id="ingredientBtn"
+                  style="vertical-align: middle"
+                >
+                  <span>Submit</span>
+                </button>
+              </div>
+            </div>
+          </form>
+          <form>
+            <div class="catgry">
+              <h4>Find a recipe by category :</h4>
+              <div class="align">
+                <select name="category" id="selectCategory"></select>
+                <button
+                  class="button"
+                  type="submit"
+                  id="categoryBtn"
+                  style="vertical-align: middle"
+                >
+                  <span>Submit</span>
+                </button>
+              </div>
+            </div>
+          </form>
+          <form>
+            <div class="area">
+              <h4>Find a recipe by area : </h4>
+              <div class="align">
+                <select name="area" id="selectArea"></select>
+                <button
+                  class="button"
+                  type="submit"
+                  id="areabtn"
+                  style="vertical-align: middle"
+                >
+                  <span>Submit</span>
+                </button>
+              </div>
+            </div>
+          </form>
+          <form>
+            <div class="random">
+              <h4>Random recipe :</h4>
+              <div class="align">
+                <p class="randrecip">Find a random recipe here ▶</p>
+                <button
+                  class="button"
+                  type="submit"
+                  id="randombtn"
+                  style="vertical-align: middle"
+                >
+                  <span>Submit</span>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div id="mealList"></div>
+      </div>
+    </div>
+  </body>
+</html>

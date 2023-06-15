@@ -1,0 +1,23 @@
+body{
+    background: var(--bgcolor);
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: #ffffff;
+    overflow: hidden;
+    font-family: "Azonix", sans-serif;
+}
+
+:root{
+    --bgcolor: #290456;
+    --color2: #c23ad1;
+    --color3: #ffffff;
+    --color4: #000000;
+}
+
+h1{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 4rem;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice JS</title>
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css@1.11/mvp.css">
+    <script defer src="Calculatrice.js"></script>
+    <style>
+        h1{
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1> Calculatrice </h1>
+    <div id="error" >
+
+    </div>
+    <form id="result">
+<label for="nombre1"> 1er nombre</label>
+<input type="text" id="nombre1">
+
+<label for="nombre2"> 2eme nombre</label>
+<input type="text" id="nombre2">
+<label for="operation"> Coissez l'operation</label>
+<select id="operation"> 
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+</select>
+
+<button type="submit">Calculer</button>
+
+<button type="button" id="renitialiser">Reset</button>
+
+<div id="results"> 
+
+</div>
+
+        
+    </form>
+</body>
+</html>

@@ -1,0 +1,115 @@
+html {
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+}
+
+select {
+  width: 95px;
+  margin-left: 24px;
+}
+
+h4 {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+.search,
+.ingrd,
+.catgry,
+.random,
+.area {
+  font-size: small;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  border-style: solid;
+  border-radius: 5px;
+  /* background-color: rgb(255, 0, 0); */
+  width: 300px;
+  height: 90px;
+}
+
+.align {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 23px;
+}
+
+.prout {
+  text-align: center;
+  margin: 0px;
+}
+
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  width: 85px;
+  height: 30px;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 17px;
+  transition: all 0.5s;
+  cursor: pointer;
+  float: right;
+}
+
+span {
+  color: white;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#mealInput {
+  width: 50%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+/* #mealList{
+    margin-left: 420px;
+    margin-top: -550px;
+  } */
+
+.container {
+  display: flex;
+  gap: 40px;
+}
+
+form {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
